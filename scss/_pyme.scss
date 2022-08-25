@@ -1,0 +1,28 @@
+
+
+.pyme{
+    background-image: url(../img/fondopime.png);
+    background-position: center;
+    background-size: cover;
+    div{
+        padding: 1em;
+        h1{
+            font-size: 80pt;
+            font-weight: map-get($font-w, xl );
+            color: map-get($font-c, second );
+        }
+        h2{
+            font-size: 40pt;
+            background-color: map-get($bg-color , second );
+            
+        }
+    }
+}
+.somos{
+    p {
+        position: relative;
+        top: 20px;
+        bottom: 10px;
+        font-size: map-get($font-s, l );
+    }
+}

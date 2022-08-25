@@ -381,6 +381,31 @@
   color: white;
 }
 
+.pyme {
+  background-image: url(../img/fondopime.png);
+  background-position: center;
+  background-size: cover;
+}
+.pyme div {
+  padding: 1em;
+}
+.pyme div h1 {
+  font-size: 80pt;
+  font-weight: bolder;
+  color: #FF6600;
+}
+.pyme div h2 {
+  font-size: 40pt;
+  background-color: #FF6600;
+}
+
+.somos p {
+  position: relative;
+  top: 20px;
+  bottom: 10px;
+  font-size: 18pt;
+}
+
 * {
   margin: 0;
   padding: 0;
