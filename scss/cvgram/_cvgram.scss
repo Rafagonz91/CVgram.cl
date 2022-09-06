@@ -1,12 +1,11 @@
 
+.cuerpo{
+    background: map-get($bg-color, main);
+}
 .navcv{
-    a span{
-        color: map-get($font-c, main);
+    a:hover{
+        background-color: map-get($bg-color, second );
     }
-    a{
-        margin-left: 60px;
-    }
-    
 }
 .underline {
     display: inline-block;
@@ -15,7 +14,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 1px;
+        height: 2px;
         bottom: 0;
         left: 0;
         background-color: map-get($bg-color, second);
@@ -32,7 +31,7 @@
 }
 
 .contenidoIndex{   
-    .greattings{
+    .saludos{
         position: absolute;
         top: 200px;
         .tag2 {
@@ -55,7 +54,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                right: 100%;
+                right: 80%;
                 width: 0;
                 bottom: 0;
                 z-index: 1;
@@ -110,10 +109,11 @@
         
     } 
     .imglink{
-        transition: transform 1s ease-in-out;
-        &:hover{
-            transform: scale(1.2);
-        }
+        transition: transform 2s;
+        
+    }
+    .imglink:hover{
+        transform: scale(1.2);
     }
     .imglink1{
         position: absolute;
@@ -172,7 +172,7 @@
     
     ul li{
         color: map-get($font-c, main );
-        font-size: map-get($font-s,s );
+        font-size: map-get($font-s, xs );
         font-weight: map-get($font-w, light);  
     }
     div i{
@@ -195,6 +195,9 @@
         }
         &:nth-child(4){
             animation-delay: 4.4s
+        }
+        &:nth-child(5){
+            animation-delay: 4.5s
         }
     }
 }
