@@ -17,3 +17,17 @@
     background-color: map-get($bg-color, alternative );
     color: map-get($font-c, main );
 }
+.tarjeta{
+    background-color: map-get($bg-color, alternative );
+    border-radius: 15px;
+    border: solid 0.5pt grey;
+    h3{
+        font-size: map-get($font-s, m );
+    }
+    p{
+        font-size: map-get($font-s, s );
+    }
+    &:hover{
+       border: solid 1pt white;
+    }
+}

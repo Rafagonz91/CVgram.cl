@@ -144,12 +144,6 @@
     border-color: transparent;
   }
 }
-.contenidoIndex .imglink {
-  transition: transform 2s;
-}
-.contenidoIndex .imglink:hover {
-  transform: scale(1.2);
-}
 .contenidoIndex .imglink1 {
   position: absolute;
   top: 120px;
@@ -200,14 +194,24 @@
   z-index: 1;
 }
 
-.pie ul li {
+.imglink {
+  transition: transform 3s ease-in-out;
+}
+.imglink:hover {
+  transform: scale(1.2);
+}
+
+.pie {
+  background-color: #0A1120;
+}
+.pie .pieBox ul li {
   color: white;
   font-size: 8pt;
 }
-.pie div i {
+.pie .pieBox div i {
   color: #FF6600;
 }
-.pie .rrss {
+.pie .pieBox .rrss {
   -webkit-animation: bounce 0.8s;
           animation: bounce 0.8s;
   -webkit-animation-delay: 4.1s;
@@ -223,19 +227,19 @@
     top: -20px;
   }
 }
-.pie .rrss:nth-child(2) {
+.pie .pieBox .rrss:nth-child(2) {
   -webkit-animation-delay: 4.2s;
           animation-delay: 4.2s;
 }
-.pie .rrss:nth-child(3) {
+.pie .pieBox .rrss:nth-child(3) {
   -webkit-animation-delay: 4.3s;
           animation-delay: 4.3s;
 }
-.pie .rrss:nth-child(4) {
+.pie .pieBox .rrss:nth-child(4) {
   -webkit-animation-delay: 4.4s;
           animation-delay: 4.4s;
 }
-.pie .rrss:nth-child(5) {
+.pie .pieBox .rrss:nth-child(5) {
   -webkit-animation-delay: 4.5s;
           animation-delay: 4.5s;
 }
@@ -311,6 +315,21 @@
 .estiloModal {
   background-color: #1C2C48;
   color: white;
+}
+
+.tarjeta {
+  background-color: #1C2C48;
+  border-radius: 15px;
+  border: solid 0.5pt grey;
+}
+.tarjeta h3 {
+  font-size: 16pt;
+}
+.tarjeta p {
+  font-size: 10pt;
+}
+.tarjeta:hover {
+  border: solid 1pt white;
 }
 
 .navBlog img {

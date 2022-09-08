@@ -108,13 +108,8 @@
         }
         
     } 
-    .imglink{
-        transition: transform 2s;
-        
-    }
-    .imglink:hover{
-        transform: scale(1.2);
-    }
+   
+    
     .imglink1{
         position: absolute;
         top: 120px;
@@ -166,38 +161,48 @@
         z-index: 1;
     } 
 }
+.imglink{
+    transition: transform 3s ease-in-out;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
 
 
 .pie{
+    background-color: map-get($bg-color, main );
+    .pieBox{
     
-    ul li{
-        color: map-get($font-c, main );
-        font-size: map-get($font-s, xs );
-        font-weight: map-get($font-w, light);  
-    }
-    div i{
-        color: map-get($font-c, second);
-    }
-    .rrss {
-        
-        animation: bounce 0.8s ;
-        animation-delay: 4.1s;
-        @keyframes bounce {
-            100%{
-                top: -20px;
+        ul li{
+            color: map-get($font-c, main );
+            font-size: map-get($font-s, xs );
+            font-weight: map-get($font-w, light);  
+        }
+        div i{
+            color: map-get($font-c, second);
+        }
+        .rrss {
+            
+            animation: bounce 0.8s ;
+            animation-delay: 4.1s;
+            @keyframes bounce {
+                100%{
+                    top: -20px;
+                }
             }
-        }
-        &:nth-child(2){
-            animation-delay: 4.2s
-        }
-        &:nth-child(3){
-            animation-delay: 4.3s
-        }
-        &:nth-child(4){
-            animation-delay: 4.4s
-        }
-        &:nth-child(5){
-            animation-delay: 4.5s
+            &:nth-child(2){
+                animation-delay: 4.2s
+            }
+            &:nth-child(3){
+                animation-delay: 4.3s
+            }
+            &:nth-child(4){
+                animation-delay: 4.4s
+            }
+            &:nth-child(5){
+                animation-delay: 4.5s
+            }
         }
     }
 }
+
