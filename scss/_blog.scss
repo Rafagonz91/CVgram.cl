@@ -20,9 +20,7 @@
     background-position: center;
     background-size: cover;
 }
-.card-img-filter{
-    filter: brightness(0.8);
-}
+
 .rollero{
     display: flex;
     font-size: 24pt;
@@ -83,6 +81,22 @@
         border: solid 2pt gray;
     }
 }   
-.botonTag{
+.botonBlog{
     @include button-style(1pt,50px,blog,1em,main);
+}
+.tituloB{
+    font-size: map-get($font-s, xl );
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: map-get($font-w, xl );
+    color: map-get($font-c, primary);
+}
+.botonBlog_up{
+    background-color: map-get($btn-c, blog );
+    text-align: center;
+    align-self: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.2em;    
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
 }

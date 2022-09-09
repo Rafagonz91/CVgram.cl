@@ -106,12 +106,12 @@
 }
 .contenidoIndex .saludos h2 {
   position: absolute;
-  color: white;
+  color: rgb(231, 232, 236);
   top: 50px;
 }
 .contenidoIndex .saludos p {
   position: absolute;
-  color: white;
+  color: rgb(231, 232, 236);
   top: 90px;
 }
 .contenidoIndex .tag1 {
@@ -205,7 +205,7 @@
   background-color: #0A1120;
 }
 .pie .pieBox ul li {
-  color: white;
+  color: rgb(231, 232, 236);
   font-size: 8pt;
 }
 .pie .pieBox div i {
@@ -263,12 +263,12 @@
   .contenidoIndex .saludos h2 {
     position: relative;
     top: 0;
-    color: white;
+    color: rgb(231, 232, 236);
   }
   .contenidoIndex .saludos p {
     position: relative;
     top: 0;
-    color: white;
+    color: rgb(231, 232, 236);
     text-align: center;
   }
   .contenidoIndex .tag1 {
@@ -314,7 +314,7 @@
 
 .estiloModal {
   background-color: #1C2C48;
-  color: white;
+  color: rgb(231, 232, 236);
 }
 
 .tarjeta {
@@ -354,10 +354,6 @@
   background-image: url(../img/fondoblog.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.card-img-filter {
-  filter: brightness(0.8);
 }
 
 .rollero {
@@ -440,13 +436,30 @@
   border: solid 2pt gray;
 }
 
-.botonTag {
+.botonBlog {
   border: 1pt rgb(67, 71, 83);
   border-radius: 50px;
   background-color: rgb(86, 86, 243);
   padding: 1em;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(231, 232, 236);
+}
+
+.tituloB {
+  font-size: 32pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: #336bcc;
+}
+
+.botonBlog_up {
+  background-color: rgb(86, 86, 243);
+  text-align: center;
+  align-self: center;
+  padding-bottom: 0.5em;
+  padding-top: 0.2em;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .pyme {
