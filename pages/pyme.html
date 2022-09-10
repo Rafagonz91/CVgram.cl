@@ -13,79 +13,71 @@
     <meta name="keywords" content="pyme, panadería, pan, ventas, dulce, salado, cvgram">
     <title>MiPyme</title>
 </head>
-<body class="bg-dark">
+<body class="cuerpoPyme">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    
+    <header >
+      <nav class="navbar navbar-expand-md navbar-light ">
+          <div class="container ">
+            <div class="col-2" > 
+              <a href=""><img src="../img/ohPan.png" alt=""  width="80px" height="80px" class=" img-fluid "></a>
+            </div>
+            <button class="navbar-toggler btn-dark bg-light" data-bs-toggle="collapse" data-bs-target="#secondaryNav" aria-controls="secondNav" aria-expanded="false" aria-label="Barra de navegación">
+              <span class="navbar-toggler-icon ms-auto"></span>
+            </button>
+            <div class="collapse col-8 navbar-collapse justify-content-evenly " id="secondaryNav">
+              <div class="nav text-bar text-white flex-column flex-md-row align-items-center">
+                  <a href="#art1" class="text-reset"  >¡OhPan!</a>
+                  <a href="#art2" class="text-reset"  >¿Quieres somos?</a>
+                  <a href="#art3" class="text-reset"  >Productos</a>
+                  <a href="#art4" class="text-reset"   >Recetario</a>
+                  <a href="#art5" class="nav-link text-reset ">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contactanos</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Contactanos</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">                            
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="Nombre y apellido">
+                          <label for="floatingInput">Nombre y Apellido</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                          <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" aria-label="Selecciona">
+                            <option selected>Motivo</option>
+                            <option value="1">Reclamo</option>
+                            <option value="2">Devolución</option>
+                            <option value="3">Cumplido</option>
+                            <option value="4">¿Quieres trabajar con nosotros?</option>                    
+                          </select>
+                          <label for="floatingSelect">Selecciona</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <textarea class="form-control" placeholder="Comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2">Comentario</label>
+                        </div>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                      </div>
+                      <iframe class="justify-content-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.452915020605!2d-70.66264298523686!3d-33.437504804233164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5afcb367a75%3A0xa5225fec1327d955!2sAv.%20Manuel%20Rodriguez%20Nte.%20572%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1662768593733!5m2!1ses-419!2scl" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </a>
+              </div>
+               <div class="col-2 d-flex justify-content-between justify-content-md-left ">
+              <a href="https://www.instagram.com/ohpancl/" target="_blank" class="nav-link text-bar fs-1"><i class="fa-brands fa-instagram rrss "></i>  </a>              
+              <a href="https://wa.me/qr/IOALR6BHURMMG1"target="_blank" class="nav-link text-bar fs-1"><i class="fa-brands fa-whatsapp rrss"></i></a>              
+          </div> 
+            </div>
+           
+          </div>
+      </nav>
+    </header>
     <section>
       <div class="container-fluid">
-        <div class="row min-vh-100 flex-column flex-md-row">
-          <aside class="col-12 col-md-3 col-xl-2 p-0 bg-warning flex-shirnk-1 ">
-            <nav class="navbar navbar-expand-md navbar-dark flex-md-column flex-row aling-items-center p-2 text-center sticky-top" id="sidebar">
-              <div class="text-center p-3"> 
-                <a href=""><img src="../img/ohPan.png" alt=""  width="60%" class=" img-fluid text-reset my-4 p-1 d-none d-md-block shadow"></a>
-                <a href="#" class="navbar-brand mx-0 font-weight-bold text-nowrap">¡OhPan!</a>
-              </div>
-              <button type="button" class="navbar-toggler border-0 order-1" data-bs-toggle="collapse"  data-bs-target="#nav" aria-controls="nav" arial-controls="#nav" aria-expanded="false" aria-label="toggle navgation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse prdr-last " id="nav">
-                <ul class="navbar-nav flex-column w-100 justify-content-center ">
-                    <li class="nav-item">
-                      <a href="#art1" class="nav-link active text-reset linksidebar">¡OhPan!</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#art2" class="nav-link text-reset linksidebar">¿Quieres somos?</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#art3" class="nav-link text-reset linksidebar">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#art4" class="nav-link text-reset linksidebar">Recetario</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#art5" class="nav-link text-reset linksidebar">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contactanos</button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                          <div class="offcanvas-header">
-                            <h5 id="offcanvasRightLabel">Contactanos</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                          </div>
-                          <div class="offcanvas-body">                            
-                            <div class="form-floating mb-3">
-                              <input type="email" class="form-control" id="floatingInput" placeholder="Nombre y apellido">
-                              <label for="floatingInput">Nombre y Apellido</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                              <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                              <label for="floatingInput">Email</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                              <select class="form-select" id="floatingSelect" aria-label="Selecciona">
-                                <option selected>Motivo</option>
-                                <option value="1">Reclamo</option>
-                                <option value="2">Devolución</option>
-                                <option value="3">Cumplido</option>
-                                <option value="4">¿Quieres trabajar con nosotros?</option>                    
-                              </select>
-                              <label for="floatingSelect">Selecciona</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                              <textarea class="form-control" placeholder="Comentario" id="floatingTextarea2" style="height: 100px"></textarea>
-                              <label for="floatingTextarea2">Comentario</label>
-                            </div>
-                            <button type="button" class="btn btn-primary">Enviar</button>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.452915020605!2d-70.66264298523686!3d-33.437504804233164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5afcb367a75%3A0xa5225fec1327d955!2sAv.%20Manuel%20Rodriguez%20Nte.%20572%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1661299628941!5m2!1ses-419!2scl" width="150" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border mt-2" ></iframe>          
-                    </li>
-                </ul>
-              </div>
-              
-            </nav>         
-          </aside>       
+        <div class="row min-vh-100 flex-column flex-md-row">                 
           <div class="col  flex-grow-1 ">
             <div class="container py-3 text-white">
               <section class="vh-100 mt-4 justify-content-center pyme">

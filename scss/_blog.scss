@@ -82,7 +82,7 @@
     }
 }   
 .botonBlog{
-    @include button-style(1pt,50px,blog,1em,main);
+    @include button-style(1pt,25px,blog,1em,main);
 }
 .tituloB{
     font-size: map-get($font-s, xl );

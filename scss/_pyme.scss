@@ -1,11 +1,11 @@
 
-
+.cuerpoPyme{
+ background-color: map-get($bg-color, pyme );
+}
 .pyme{
-    background-image: url(../img/fondopime.png);
-    background-position: center;
-    background-size: cover;
+    
     div{
-        padding: 1em;
+        
         h1{
             font-size: 80pt;
             font-weight: map-get($font-w, xl );
@@ -25,4 +25,7 @@
         bottom: 10px;
         font-size: map-get($font-s, l );
     }
+}
+.botonPyme{
+    background-color: map-get($btn-c, pyme );
 }
