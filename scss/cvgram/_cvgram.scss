@@ -1,6 +1,14 @@
 
 .cuerpo{
     background: map-get($bg-color, main);
+    
+    &::-webkit-scrollbar{
+        width: 10px;        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: map-get($bg-color, alternative );
+        border-radius: 50px;
+    }
 }
 .navcv{
     a:hover{

@@ -1,3 +1,12 @@
+.cuerpoBlog{
+    &::-webkit-scrollbar{
+        width: 10px;        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: map-get($bg-color, blog );
+        border-radius: 50px;
+    }
+}
 .navBlog img {
     width: 100%;
 }

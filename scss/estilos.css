@@ -1,6 +1,13 @@
 .cuerpo {
   background: #0A1120;
 }
+.cuerpo::-webkit-scrollbar {
+  width: 10px;
+}
+.cuerpo::-webkit-scrollbar-thumb {
+  background-color: #1C2C48;
+  border-radius: 50px;
+}
 
 .navcv a:hover {
   background-color: #FF6600;
@@ -332,6 +339,14 @@
   border: solid 1pt white;
 }
 
+.cuerpoBlog::-webkit-scrollbar {
+  width: 10px;
+}
+.cuerpoBlog::-webkit-scrollbar-thumb {
+  background-color: rgb(86, 86, 243);
+  border-radius: 50px;
+}
+
 .navBlog img {
   width: 100%;
 }
@@ -462,18 +477,41 @@
   margin-bottom: 20px;
 }
 
+.cabezeraPyme {
+  background-image: url(../img/fondopime.png);
+  background-position: center;
+  background-size: cover;
+}
+.cabezeraPyme nav {
+  background-color: rgba(54, 53, 53, 0.3);
+}
+.cabezeraPyme nav a {
+  font-size: 10pt;
+  color: rgb(231, 232, 236);
+}
+
 .cuerpoPyme {
-  background-color: #14161b;
+  background-color: #1f1406;
+}
+.cuerpoPyme::-webkit-scrollbar {
+  width: 10px;
+}
+.cuerpoPyme::-webkit-scrollbar-thumb {
+  background-color: #FF6600;
+  border-radius: 50px;
 }
 
 .pyme div h1 {
   font-size: 80pt;
   font-weight: bolder;
-  color: #FF6600;
+  color: rgb(231, 232, 236);
 }
 .pyme div h2 {
   font-size: 40pt;
   background-color: #FF6600;
+  padding: 0.2em;
+  width: auto;
+  text-align: center;
 }
 
 .somos p {
@@ -484,7 +522,22 @@
 }
 
 .botonPyme {
+  border: 1pt rgb(67, 71, 83);
+  border-radius: 25px;
   background-color: #FF6600;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(231, 232, 236);
+}
+
+.producto {
+  background-color: #35220a;
+  padding: 1em;
+}
+.producto .prodBorder {
+  border: 1pt solid white;
+  border-radius: 15px;
+  padding: 0.5em;
 }
 
 * {

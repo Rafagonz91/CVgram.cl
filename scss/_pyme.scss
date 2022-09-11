@@ -1,6 +1,29 @@
 
+.cabezeraPyme{
+ background-image: url(../img/fondopime.png);
+ background-position: center;
+ background-size: cover;
+ 
+    nav{
+        background-color: rgba(54, 53, 53, 0.3);
+        a{
+            font-size: map-get($font-s, s);
+            color: map-get($font-c, main);
+        }
+        
+        
+    }   
+ 
+}
 .cuerpoPyme{
  background-color: map-get($bg-color, pyme );
+    &::-webkit-scrollbar{
+        width: 10px;        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: map-get($bg-color, second );
+        border-radius: 50px;
+    }
 }
 .pyme{
     
@@ -9,11 +32,14 @@
         h1{
             font-size: 80pt;
             font-weight: map-get($font-w, xl );
-            color: map-get($font-c, second );
+            color: map-get($font-c, main );
         }
         h2{
             font-size: 40pt;
             background-color: map-get($bg-color , second );
+            padding: 0.2em;
+            width: auto;
+            text-align: center;
             
         }
     }
@@ -27,5 +53,14 @@
     }
 }
 .botonPyme{
-    background-color: map-get($btn-c, pyme );
+    @include button-style(1pt,25px,pyme,1em,main);
+}
+.producto{
+    background-color: map-get($bg-color, pymeAlt );
+    padding: 1em;
+    .prodBorder{
+        border: 1pt solid white;
+        border-radius: 15px;
+        padding: 0.5em;
+    }
 }
