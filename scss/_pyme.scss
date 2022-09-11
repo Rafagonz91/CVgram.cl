@@ -30,7 +30,7 @@
     div{
         
         h1{
-            font-size: 80pt;
+            font-size: 60pt;
             font-weight: map-get($font-w, xl );
             color: map-get($font-c, main );
         }
@@ -46,7 +46,7 @@
 }
 
 .botonPyme{
-    @include button-style(1pt,25px,pyme,1em,main);
+    @include button-style(1pt,25px,pyme,0.5em,main);
 }
 .producto{
     background-color: map-get($bg-color, pymeAlt );
@@ -54,16 +54,12 @@
     .prodBorder{
         border: 1pt solid white;
         border-radius: 15px;
-        img{
-            width: 80px;
-            height: 80px;
-        }
         
     }
 }
 .sectionPyme{
     h2{
-        font-size: map-get($font-s, xl );
+        font-size: map-get($font-s, xxl );
         color: map-get($font-c, main );
         padding: 1em;
     }
