@@ -514,13 +514,6 @@
   text-align: center;
 }
 
-.somos p {
-  position: relative;
-  top: 20px;
-  bottom: 10px;
-  font-size: 22pt;
-}
-
 .botonPyme {
   border: 1pt rgb(67, 71, 83);
   border-radius: 25px;
@@ -537,7 +530,26 @@
 .producto .prodBorder {
   border: 1pt solid white;
   border-radius: 15px;
-  padding: 0.5em;
+}
+.producto .prodBorder img {
+  width: 80px;
+  height: 80px;
+}
+
+.sectionPyme h2 {
+  font-size: 32pt;
+  color: rgb(231, 232, 236);
+  padding: 1em;
+}
+.sectionPyme p {
+  font-size: 22pt;
+}
+.sectionPyme img {
+  border-radius: 15px;
+}
+
+.pie_pyme {
+  background-color: rgba(54, 53, 53, 0.3);
 }
 
 * {

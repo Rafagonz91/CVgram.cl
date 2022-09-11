@@ -13,7 +13,7 @@
     <meta name="keywords" content="pyme, panadería, pan, ventas, dulce, salado, cvgram">
     <title>MiPyme</title>
 </head>
-<body class="cuerpoPyme">
+<body class="cuerpoPyme vh-100">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <header class="cabezeraPyme " >
       <nav class="navbar navbar-expand-md navbar-light">
@@ -31,7 +31,7 @@
               <a href="#art3" class="text-reset"  >Productos</a>
               <a href="#art4" class="text-reset"  >Recetario</a>
               <a href="#art5" class="nav-link text-reset ">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contactanos</button>
+                <button class="botonPyme" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contactanos</button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
                     <h5 id="offcanvasRightLabel">Contactanos</h5>
@@ -74,7 +74,7 @@
                    
         </div> 
       </nav>
-      <section class="  mx-4 justify-content-center pyme ">
+      <section class=" mx-4 justify-content-center pyme ">
         <div class="row">
           <div class="col-12 col-md-8 align-items-center">
             <h1 id="art1" >¡OhPan!</h1>
@@ -87,25 +87,35 @@
       </section>
     </header>
 
-    <section>
+    <main>
       <div class="container-fluid">
         <div class="row min-vh-100 flex-column flex-md-row">                 
           <div class="col  flex-grow-1 ">
-            <div class="container-fluid  text-white">             
+            <div class="container-fluid  text-white">           
 
-              <article class="min-vh-100 mt-3 p-3 somos">
-                    <h2 id="art2">¿Quienes Somos?</h2>
-                    <p> Somos una pandería artesanal fundada en el 2018 por los hermanos Gonzalez. <br> el sueño original siempre fue tener un negocio propio <br> ambos sin experiencia pero con muchas ganas logramos abrir su pequeño local <br> aun cuando estamos donde queremos, estamos donde debemos. luchando por un sueño que para mucho pude ser una perdida de tiempo        
-                    </p>
-              </article>
-              <section class=" container-fluid min-vh-100 ">
+              <section class="  min-vh-100 mt-3 p-3 sectionPyme">
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-12 col-md-5 mb-4">
+                        <div>
+                          <h2 id="art2">¿Quienes Somos?</h2>
+                        </div>
+                        
+                        <p> Somos una pandería artesanal fundada en el 2018 por los hermanos Gonzalez. <br> El sueño original siempre fue tener un negocio propio; ambos sin experiencia pero con muchas ganas logramos abrir su pequeño local <br> aun cuando estamos donde queremos, estamos donde debemos. luchando por un sueño que para mucho pude ser una perdida de tiempo</p>
+                      </div>
+                      <div class="col 12 col-md-5">
+                        <img src="../img/ohpan/pandulce1.jpg.png" alt="Foto de inicio" width="100%">
+                      
+                      </div>
+                    </div>
+              </section>
+              <section class=" container-fluid min-vh-100 sectionPyme">
                   <h2 id="art3" class="mb-4">Productos</h2>
                   <div class="row justify-content-between producto">
                     <div class="col-12 col-md-5  p-2 mb-3 ">
                       <div class="container">
                         <div class="row col-12 align-items-center prodBorder">
                           <Div class="col-3">
-                            <img src="../img/ohpan/pandulce.jpg" alt="producto"  width="100%">
+                            <img src="../img/ohpan/pandulce.jpg" alt="producto"  >
                           </Div>
                           <div class="col-6">
                             <h5>Pan Piñita </h5>
@@ -123,7 +133,7 @@
                       <div class="container">
                         <div class="row col-12 align-items-center prodBorder">
                           <Div class="col-3">
-                            <img src="../img/ohpan/acemita.jpg" alt="producto" class="d-inline-block  mb-3 " width="100%">
+                            <img src="../img/ohpan/acemita.jpg" alt="producto" class="d-inline-block">
                           </Div>
                           <div class="col-6">
                             <h5>Pan Acemita </h5>
@@ -268,36 +278,51 @@
                       </div>
                     </div>                                           
               </section>
-              <section class="container min-vh-100">
+              <section class="container min-vh-100 sectionPyme">
                 <h2 id="art4" class="mb-4">Recetario</h2> 
                 <div class="row justify-content-between text-center">
                                      
-                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-light  shadow tagBlog">
-                    <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-dark rounded-circle mb-3 fotoPerfil">
+                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-dark  shadow tagBlog">
+                    <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-gradient rounded-circle mb-3 fotoPerfil">
                     <h5>Masa Dulce</h5>
                     <p>Receta Tradicional</p>
                     <div>
                       <button class="botonPyme" data-bs-toggle="modal" data-bs-target="#tagBlog1">Ver Receta</button>
                       <div class="modal fade" id="tagBlog1" tabindex="-1">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
                           <div class="modal-content">
-                            <div class="modal-header justify-content-center text-dark">
+                            <div class="modal-header justify-content-center ">
                               <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-gradient rounded-circle fotoModal">
-                              <h2>Masa Dulce</h2>
+                              <h2 class="text-dark">Masa Dulce</h2>
                             </div>
-                            <div class="modal-body text-dark">
-                              <h6>Ingrediente</h6>
-                              <ul>
-                                <li>1.</li>
-                                <li>2.</li>
-                                <li>3.</li>
-                                <li>4</li>
-                                <li>5.</li>
-                                <li>6.</li>
-                              </ul>                                  
+                            <div class="modal-body text-dark container">
+                              <div class="row justify-content-center">
+                                <div class="col-12 col-md-5">
+                                  <h6>Ingrediente</h6>
+                                  <ul>
+                                    <li>1.</li>
+                                    <li>2.</li>
+                                    <li>3.</li>
+                                    <li>4</li>
+                                    <li>5.</li>
+                                    <li>6.</li>
+                                  </ul> 
+                                </div>
+                                <div class="col-12 col-md-5">
+                                  <h6>Paso a paso</h6>
+                                  <ul>
+                                    <li>1.</li>
+                                    <li>2.</li>
+                                    <li>3.</li>
+                                    <li>4</li>
+                                    <li>5.</li>
+                                    <li>6.</li>
+                                  </ul> 
+                                </div>
+                              </div>
+                                                                
                             </div>
-                            <div class="modal-footer">
-                              <h6>Paso a paso</h6>
+                            <div class="modal-footer">                              
                               <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                             </div>                             
                           </div>
@@ -305,14 +330,14 @@
                       </div>
                     </div>
                   </article>
-                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-light  shadow tagBlog">
-                    <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-dark rounded-circle mb-3 fotoPerfil">
-                    <h5>Masa Salda</h5>
+                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-dark  shadow tagBlog">
+                    <img src="../img/ohpan/frances.png" alt="masa dulce" class=" bg-gradient rounded-circle mb-3 fotoPerfil">
+                    <h5>Masa Salada</h5>
                     <p>Receta Tradicional</p>
                     <div>
-                      <button class="botonPyme" data-bs-toggle="modal" data-bs-target="#tagBlog1">Ver Receta</button>
-                      <div class="modal fade" id="tagBlog1" tabindex="-1">
-                        <div class="modal-dialog">
+                      <button class="botonPyme" data-bs-toggle="modal" data-bs-target="#tagBlog2">Ver Receta</button>
+                      <div class="modal fade" id="tagBlog2" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
                           <div class="modal-content">
                             <div class="modal-header justify-content-center text-dark">
                               <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-gradient rounded-circle fotoModal">
@@ -338,18 +363,18 @@
                       </div>
                     </div>
                   </article>
-                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-light  shadow tagBlog">
-                    <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-dark rounded-circle mb-3 fotoPerfil">
+                  <article class="col-10 col-md-10 col-lg-3 bg-warning text-dark  shadow tagBlog">
+                    <img src="../img/ohpan/cachito.jpg" alt="masa dulce" class=" bg-gradient rounded-circle mb-3 fotoPerfil">
                     <h5>Masa Rellena</h5>
                     <p>Receta Tradicional</p>
                     <div>
-                      <button class="botonPyme" data-bs-toggle="modal" data-bs-target="#tagBlog1">Ver Receta</button>
-                      <div class="modal fade" id="tagBlog1" tabindex="-1">
-                        <div class="modal-dialog">
+                      <button class="botonPyme" data-bs-toggle="modal" data-bs-target="#tagBlog3">Ver Receta</button>
+                      <div class="modal fade" id="tagBlog3" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
                           <div class="modal-content">
                             <div class="modal-header justify-content-center text-dark">
                               <img src="../img/ohpan/pandulce.jpg" alt="masa dulce" class=" bg-gradient rounded-circle fotoModal">
-                              <h2>Masa RellenaS</h2>
+                              <h2>Masa Rellena</h2>
                             </div>
                             <div class="modal-body text-dark">
                               <h6>Ingrediente</h6>
@@ -378,17 +403,29 @@
           
         </div>  
       </div>
-      <div class="col-2 col-md-1 ms-auto mx-3 my-4 fixed-bottom  text-center animate__animated animate__pulse animate__infinite">
-        <div class=" p-2 bg-primary text-white rounded-pill">
-            <a href="#" class="text-reset text-decoration-none"><h5> </h5> Volver</a>
-        </div>
-        
-    </div>
-    </section>
+      <div class="col-2 col-md-1 ms-auto mx-3 my-4 fixed-bottom text-center animate__animated animate__pulse animate__infinite">        
+        <a href="#"><i class="fas fa-arrow-circle-up fs-1 link-warning "></i> </a>              
+      </div>
+    </main>
+
+    <footer class="container-fluid pie_pyme ">
+      <div class="row p-2 d-flex" >
+          <a href="#" class=" justify-content-center align-items-center col-12 col-md-6  text-decoration-none text-reset ">
+             <img src="../img/OhPan.png" alt=""  width="100px" height="100px">
+          </a>
+          <div class="col-6 col-md-3 text-white justify-content-center align-self-center">
+              <h6>© Copyright 2022</h6>
+          </div>
+          <a href="../index.html" class="text-decoration-none text-white col-6 col-md-3 d-flex justify-content-center align-items-center cvgram">
+              <h3 class="fs-6 text-reset ">Power by:</h3>
+              <img src="../img/Logo2.png" alt="" width="10%" >
+          </a>
+      </div>  
+    </footer>
    
 
        
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
