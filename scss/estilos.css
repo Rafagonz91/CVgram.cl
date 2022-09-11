@@ -516,7 +516,7 @@
 
 .botonPyme {
   border: 1pt rgb(67, 71, 83);
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #FF6600;
   padding: 0.5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -546,6 +546,12 @@
 
 .pie_pyme {
   background-color: rgba(54, 53, 53, 0.3);
+}
+
+.mapa {
+  border: 1pt solid black;
+  border-radius: 10px;
+  align-self: center;
 }
 
 * {

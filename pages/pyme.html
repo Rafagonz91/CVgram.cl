@@ -30,39 +30,46 @@
               <a href="#art2" class="text-reset"  >¿Quieres somos?</a>
               <a href="#art3" class="text-reset"  >Productos</a>
               <a href="#art4" class="text-reset"  >Recetario</a>
-              <a href="#art5" class="nav-link text-reset ">
+              <a href="#art5" class="nav-link text-reset">
                 <button class="botonPyme" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contactanos</button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Contactanos</h5>
+                <div class="offcanvas offcanvas-end justify-content-center" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header text-dark">
+                    <h5 id="offcanvasRightLabel ">Contactanos</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="offcanvas-body">                            
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="Nombre y apellido">
-                      <label for="floatingInput">Nombre y Apellido</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                      <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <select class="form-select" id="floatingSelect" aria-label="Selecciona">
-                        <option selected>Motivo</option>
-                        <option value="1">Reclamo</option>
-                        <option value="2">Devolución</option>
-                        <option value="3">Cumplido</option>
-                        <option value="4">¿Quieres trabajar con nosotros?</option>                    
-                      </select>
-                      <label for="floatingSelect">Selecciona</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <textarea class="form-control" placeholder="Comentario" id="floatingTextarea2" style="height: 100px"></textarea>
-                      <label for="floatingTextarea2">Comentario</label>
-                    </div>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <form action="">
+                      <div class="offcanvas-body text-dark">                  
+                        <div class="form-floating mb-2">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="Nombre y apellido" required>
+                          <label for="floatingInput">Nombre y Apellido</label>
+                        </div>
+                        <div class="form-floating mb-2  ">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                          <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                          <select class="form-select" id="floatingSelect" aria-label="Selecciona" required>
+                            <option selected>Motivo</option>
+                            <option value="1">Reclamo</option>
+                            <option value="2">Devolución</option>
+                            <option value="3">Cumplido</option>
+                            <option value="4">¿Quieres trabajar con nosotros?</option>                    
+                          </select>
+                          <label for="floatingSelect">Selecciona</label>
+                        </div>
+                        <div class="form-floating mb-2">
+                          <textarea class="form-control" placeholder="Comentario" id="floatingTextarea2" style="height: 100px" required></textarea>
+                          <label for="floatingTextarea2">Comentario</label>
+                        </div> 
+                        <div class="row justify-content-center">
+                          <input class="botonPyme col-3" type="submit" value="Enviar">
+                        </div>  
+                    </form>                
                   </div>
-                  <iframe class="justify-content-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.452915020605!2d-70.66264298523686!3d-33.437504804233164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5afcb367a75%3A0xa5225fec1327d955!2sAv.%20Manuel%20Rodriguez%20Nte.%20572%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1662768593733!5m2!1ses-419!2scl" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  
+                  <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.452915020605!2d-70.66264298523686!3d-33.437504804233164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5afcb367a75%3A0xa5225fec1327d955!2sAv.%20Manuel%20Rodriguez%20Nte.%20572%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1662768593733!5m2!1ses-419!2scl" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
                 </div>
               </a>
             </div>
